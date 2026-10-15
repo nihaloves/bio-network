@@ -1,65 +1,114 @@
-# bio-network
 # SPORE-NET: A Bio-Inspired Network Resilience Simulator
 
-A web-based simulator exploring how slime mould-inspired routing can help investigate resilience in computer networks.
+**Inspired by Nature. Designed to Explore Network Resilience.**
 
-### Team Name
-**TanjiroKurama**
+## Team Details
 
-### Team Members
-- **Niharika K Thilak**
-- **Thejus R Menon**
+**Team Name:** TanjiroKurama
 
-### Hosted Project
-[Launch SPORE-NET](https://spore-net-adaptive-n-3qc1.bolt.host/)
+**Team Members:**
+- Niharika K Thilak
+- Thejus R Menon
+
+**Live Demo:** https://spore-net-adaptive-n-3qc1.bolt.host/
 
 ---
 
-## Project Description
+## 1. Overview
 
-SPORE-NET draws inspiration from the adaptive transport networks of *Physarum polycephalum*, a slime mould. It explores bio-inspired routing strategies by simulating network disruptions and comparing their performance with conventional shortest-path routing.
+SPORE-NET is a web-based network simulation platform inspired by the adaptive transport networks of *Physarum polycephalum*, commonly known as slime mould. The project explores how biologically inspired adaptation principles can be applied to computer network routing to investigate resilience under changing traffic conditions and connection failures.
 
-## Problem Statement
+By comparing bio-inspired adaptive routing with conventional shortest-path routing, SPORE-NET provides an interactive environment for studying network performance, connectivity, and recovery during simulated disruptions.
 
-Traditional network routing can face challenges when connections fail or network conditions change. Exploring adaptive routing strategies may offer insights into building more resilient communication networks.
+## 2. Problem Statement
 
-## Our Solution
+Computer networks operate in dynamic environments where link failures and changing traffic conditions can disrupt communication. Conventional shortest-path routing provides efficient routes under given conditions, but disruptions may require routes to be recalculated.
 
-SPORE-NET provides an interactive simulation environment where users can explore network behavior, observe disruptions, and investigate how different routing strategies perform under changing conditions.
+There is a need to explore adaptive routing strategies that can respond to network changes and potentially improve resilience.
 
-## Key Features
+## 3. Proposed Solution
 
-- Interactive network simulation
-- Simulated network failures and disruptions
-- Bio-inspired adaptive routing exploration
-- Comparison with conventional shortest-path routing
-- Visual representation of network behavior
-- Performance analysis under different conditions
+SPORE-NET applies computational principles inspired by the way slime mould networks adapt their transport pathways. The simulator models network connections and investigates how their relative importance can change in response to simulated traffic and disruptions.
 
-## Technologies Used
+The project compares the behavior of this bio-inspired approach with a conventional shortest-path baseline, allowing users to examine the trade-offs between routing efficiency and network resilience.
 
-- **Frontend:** React, TypeScript, Vite
-- **Deployment:** Bolt Hosting
+## 4. Scientific Foundation
 
-*Additional technologies depend on the final implementation.*
+The project draws inspiration from research on biologically inspired adaptive network design, particularly the work of Tero et al. (2010).
 
-## Scientific Inspiration
+In the proposed computational approach, connections that carry greater simulated flow can be assigned greater conductance, while conductance can decrease over time. This provides a simplified mathematical model for exploring adaptive network structures.
 
-The project is inspired by research on biologically inspired adaptive network design:
+The model is inspired by biological principles; it does not claim to reproduce every aspect of a living slime mould.
+
+**Research reference:**
 
 Tero, A., et al. (2010). *Rules for Biologically Inspired Adaptive Network Design.* Science, 327(5964), 439–442.
 
 [Read the research paper](https://doi.org/10.1126/science.1177894)
 
-## Future Scope
+## 5. Objectives
 
-- Test additional network topologies and failure scenarios
-- Expand performance metrics and experiment comparisons
-- Support reproducible simulations with configurable parameters
-- Explore applications in resilient communication systems
+- Explore bio-inspired adaptive routing in computer networks.
+- Simulate network disruptions and changing conditions.
+- Compare adaptive routing with conventional shortest-path routing.
+- Observe changes in network connectivity and performance.
+- Investigate the potential of nature-inspired algorithms for resilient network design.
+
+## 6. Key Features
+
+- **Interactive Simulation:** Explore a computer network through a visual interface.
+- **Network Disruptions:** Examine network behavior under simulated link failures.
+- **Adaptive Routing Model:** Investigate routing inspired by biological transport networks.
+- **Baseline Comparison:** Compare routing strategies under equivalent simulation conditions.
+- **Performance Evaluation:** Examine available network metrics to understand routing behavior.
+- **Configurable Experiments:** Test different simulation conditions where supported by the application.
+
+## 7. Methodology
+
+1. **Network Generation:** Represent a computer network as interconnected nodes and links.
+2. **Traffic Simulation:** Model communication flows between selected nodes.
+3. **Routing:** Apply the selected routing strategy to determine communication paths.
+4. **Disruption:** Introduce simulated link failures or other supported changes.
+5. **Adaptation:** Update connection conductance according to the bio-inspired model.
+6. **Comparison:** Evaluate the resulting network behavior against the conventional routing baseline.
+
+This workflow enables controlled experiments into how routing strategies respond to changing network conditions.
+
+## 8. Technology Stack
+
+- **Frontend:** React, TypeScript, Vite
+- **Development and Deployment:** Bolt
+
+Additional libraries, algorithms, and backend technologies should be listed according to the final implementation.
+
+## 9. Applications and Potential Impact
+
+SPORE-NET explores concepts relevant to:
+
+- Fault-tolerant communication networks
+- Adaptive routing algorithms
+- Distributed systems research
+- Network design for dynamic environments
+- Bio-inspired computing and algorithm development
+
+These are potential research applications; further testing is required to establish real-world performance benefits.
+
+## 10. Future Enhancements
+
+- Introduce additional network topologies and failure scenarios.
+- Expand routing performance metrics.
+- Add repeatable experiments using configurable random seeds.
+- Compare performance across different network sizes and traffic loads.
+- Investigate hybrid routing strategies combining conventional and bio-inspired approaches.
+
+## 11. Conclusion
+
+SPORE-NET brings together biological inspiration, computational modelling, and network simulation to investigate an important engineering question: can adaptive principles inspired by nature help us design more resilient computer networks?
+
+By enabling visual experimentation and comparative analysis, the project provides a foundation for further exploration of bio-inspired network design.
 
 ---
 
 **SPORE-NET | Team TanjiroKurama**
 
-*Inspired by nature. Exploring resilient networks.*
+*Exploring the connection between biological adaptation and network resilience.*
