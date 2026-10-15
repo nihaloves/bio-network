@@ -1,0 +1,119 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&family=Space+Grotesk:wght@400;500;600;700&family=JetBrains+Mono:wght@400;500&display=swap');
+
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+:root {
+  --spore-bg: #0B1220;
+  --spore-surface: #111C2E;
+  --spore-surface-light: #1A2740;
+  --spore-border: #1E2D45;
+  --spore-teal: #35C6B0;
+  --spore-teal-dim: #2A9E8C;
+  --spore-cyan: #78DCE8;
+  --spore-mint: #9BEDD5;
+  --spore-text: #F3F7FA;
+  --spore-muted: #A8B6C8;
+  --spore-dim: #6B7A92;
+  --spore-light: #F4F8FA;
+  --spore-light-text: #172334;
+  --spore-light-muted: #5A6B82;
+  --spore-success: #3DD68C;
+  --spore-warning: #F5B955;
+  --spore-error: #EF6B6B;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+html, body {
+  margin: 0;
+  padding: 0;
+  background: var(--spore-bg);
+  color: var(--spore-text);
+  font-family: 'Inter', system-ui, sans-serif;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+body {
+  min-height: 100vh;
+}
+
+/* Custom scrollbar */
+::-webkit-scrollbar {
+  width: 8px;
+  height: 8px;
+}
+::-webkit-scrollbar-track {
+  background: var(--spore-bg);
+}
+::-webkit-scrollbar-thumb {
+  background: var(--spore-border);
+  border-radius: 4px;
+}
+::-webkit-scrollbar-thumb:hover {
+  background: var(--spore-dim);
+}
+
+/* Focus indicators */
+:focus-visible {
+  outline: 2px solid var(--spore-teal);
+  outline-offset: 2px;
+  border-radius: 2px;
+}
+
+/* Reduced motion */
+@media (prefers-reduced-motion: reduce) {
+  * {
+    animation-duration: 0.01ms !important;
+    animation-iteration-count: 1 !important;
+    transition-duration: 0.01ms !important;
+  }
+}
+
+/* Selection */
+::selection {
+  background: rgba(53, 198, 176, 0.3);
+  color: var(--spore-text);
+}
+
+/* Utility classes */
+.text-balance {
+  text-wrap: balance;
+}
+
+.bioluminescent {
+  filter: drop-shadow(0 0 4px rgba(53, 198, 176, 0.5));
+}
+
+.bioluminescent-cyan {
+  filter: drop-shadow(0 0 4px rgba(120, 220, 232, 0.5));
+}
+
+/* Grid background pattern */
+.grid-pattern {
+  background-image:
+    linear-gradient(rgba(30, 45, 69, 0.4) 1px, transparent 1px),
+    linear-gradient(90deg, rgba(30, 45, 69, 0.4) 1px, transparent 1px);
+  background-size: 40px 40px;
+}
+
+/* Research surface (light cards for scientific content) */
+.research-surface {
+  background: var(--spore-light);
+  color: var(--spore-light-text);
+}
+
+.research-surface h1,
+.research-surface h2,
+.research-surface h3 {
+  color: var(--spore-light-text);
+}
+
+.research-surface p,
+.research-surface li {
+  color: var(--spore-light-muted);
+}
